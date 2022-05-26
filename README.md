@@ -1,4 +1,4 @@
-## Hellou eu sou a Karine Araújo, Desenvolvedora Júnior e Engenheira da Computação!
+## Hellou eu sou Karine Araújo, Desenvolvedora Júnior e Engenheira da Computação!
 <div align="center">
   <a href="https://github.com/karinefaraujo05">
   <img height="170em" src="https://github-readme-stats.vercel.app/api?username=karinefaraujo05&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
