@@ -2,10 +2,18 @@
 
 Engenheira da Computação • Full Stack (Web & Mobile) • atualmente construindo produtos de IA/legal-tech na Patagon.ai 🚀
 
+<!--
+  ⚙️  CARDS DE ESTATÍSTICAS
+  Troque "SEU-DOMINIO.vercel.app" abaixo pelo domínio da SUA instância do
+  github-readme-stats (ex: karine-stats.vercel.app), depois faça commit/push.
+  Passo a passo: fork de github.com/anuraghazra/github-readme-stats,
+  deploy na Vercel com a env var PAT_1 = seu token do GitHub (escopo repo).
+  count_private=true só funciona na sua própria instância com esse token.
+-->
 <div align="center">
   <a href="https://github.com/karinefaraujo05">
-    <img height="165em" src="https://github-readme-stats.vercel.app/api?username=karinefaraujo05&show_icons=true&count_private=true&include_all_commits=true&theme=dracula"/>
-    <img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=karinefaraujo05&layout=compact&langs_count=8&count_private=true&theme=dracula"/>
+    <img height="165em" src="https://SEU-DOMINIO.vercel.app/api?username=karinefaraujo05&show_icons=true&count_private=true&include_all_commits=true&theme=dracula"/>
+    <img height="165em" src="https://SEU-DOMINIO.vercel.app/api/top-langs/?username=karinefaraujo05&layout=compact&langs_count=8&count_private=true&theme=dracula"/>
   </a>
 </div>
 
