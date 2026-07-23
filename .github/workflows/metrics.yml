@@ -39,5 +39,8 @@ jobs:
           plugin_languages_details: bytes-size, percentage
           plugin_languages_categories: markup, programming
           plugin_languages_colors: github
+          # indepth = clona e mede os bytes reais, inclusive dos repos PRIVADOS
+          plugin_languages_indepth: yes
+          plugin_languages_analysis_timeout: 15
           # Conta também os repositórios privados
           repositories_affiliations: owner, collaborator, organization_member
