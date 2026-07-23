@@ -1,0 +1,43 @@
+name: Metrics
+on:
+  # Atualiza todo dia às 06:00 UTC (03:00 em São Paulo)
+  schedule:
+    - cron: "0 6 * * *"
+  # Permite rodar manualmente na aba Actions
+  workflow_dispatch:
+  # Regenera quando o próprio workflow muda
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/metrics.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Gerar métricas + card de linguagens (inclui repos privados)
+        uses: lowlighter/metrics@latest
+        with:
+          # Token com escopo "repo" para enxergar linguagens dos repositórios privados
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: karinefaraujo05
+          filename: github-metrics.svg
+          template: classic
+          config_timezone: America/Sao_Paulo
+
+          # Blocos exibidos no card
+          base: header, activity, community, repositories, metadata
+
+          # Card de linguagens (os "quadradinhos" com o peso de cada linguagem)
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_categories: markup, programming
+          plugin_languages_colors: github
+          # Conta também os repositórios privados
+          repositories_affiliations: owner, collaborator, organization_member
